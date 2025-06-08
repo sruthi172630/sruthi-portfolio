@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // This needs to be '.' for path mapping to work correctly
+    "paths": {
+      "@/*": ["./src/*"] // Map '@/*' to './src/*'
+    },
+    // Recommended settings for React/JSX
+    "jsx": "react-jsx", // Specify JSX factory
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true, // Allow JavaScript files
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler", // Or "node" depending on Vite config/setup
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"] // Specify which directories to include for the compiler
+}
